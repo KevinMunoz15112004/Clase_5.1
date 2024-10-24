@@ -1,15 +1,16 @@
-public class Estudiantes {
+public class Ciudadanos {
     private String nombre;
     private String apellido;
     private int edad;
-    private double nota;
 
     //Constructores (Con parámetros y vacío)
-    public Estudiantes(String nombre, String apellido, int edad, double nota) {
+    public Ciudadanos(String nombre, String apellido, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        this.nota = nota;
+    }
+    public Ciudadanos() {
+
     }
 
     //Getters y Setters
@@ -31,19 +32,11 @@ public class Estudiantes {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    public double getNota() {
-        return nota;
-    }
-    public void setNota(double nota) {
-        this.nota = nota;
-    }
 
     //Metodo para imprimir
-    public void imprimir(){
-        System.out.println("El nombre del estudiante es: " + getNombre());
-        System.out.println("El apellido del estudiante es: " + getApellido());
-        System.out.println("La edad del estudiante es: " + getEdad());
-        System.out.println("La nota obtenida es: " + getNota());
+    public void imprimir() {
+        System.out.println("El nombre del ciudadano es: "+ getNombre());
+        System.out.println("El apellido del ciudadano es: "+ getApellido());
+        System.out.println("El edad del ciudadano es: "+ getEdad());
     }
 }
-
